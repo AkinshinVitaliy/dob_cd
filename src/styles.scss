@@ -3,14 +3,9 @@
 // Fonts
 $font--primary: 'Quicksand', sans-serif;
 
-// Colours
-$blue1: #dfdaff;
-$brown1: #6b5344;
-$red1: #e76868;
-$cream1: #f8ecc9;
-
 // Selectors
 body {
-  background-color: $blue1;
   font-family: $font--primary;
+  margin: 0px;
+  padding: 0px;
 }

@@ -1,32 +1,38 @@
-<lib-countdown
-  [date]="finishDate"
-  isCustomTemplate="isCustomTemplate"
-  (daysChanged)="onDaysChanged($event)"
-  (hoursChanged)="onHoursChanged($event)"
-  (minutesChanged)="onMinutesChanged($event)"
-  (secondsChanged)="onSecondsChanged($event)">
-  <h1 class="title">Первый День Рождения</h1>
-  <div class="container">
-    <div class="cake">
-      <div class="cake__candle"></div>
+<div class="main-container" #container>
+  <lib-countdown
+    [date]="finishDate"
+    isCustomTemplate="isCustomTemplate"
+    (daysChanged)="onDaysChanged($event)"
+    (hoursChanged)="onHoursChanged($event)"
+    (minutesChanged)="onMinutesChanged($event)"
+    (secondsChanged)="onSecondsChanged($event)">
+    <h1 class="title">Первый День Рождения</h1>
+    <div class="container">
+      <div class="cake">
+        <div class="cake__candle"></div>
+      </div>
     </div>
+    <div id="js-clock" class="clock">
+      <div class="clock__days">
+        <span id="js-days">{{days}}</span>
+        <div>Дни</div>
+      </div>
+      <div class="clock__hours">
+        <span id="js-hours">{{hours}}</span>
+        <div>Часы</div>
+      </div>
+      <div class="clock__minutes">
+        <span id="js-minutes">{{minutes}}</span>
+        <div>Минуты</div>
+      </div>
+      <div class="clock__seconds">
+        <span id="js-seconds">{{seconds}}</span>
+        <div>Секунды</div>
+      </div>
+    </div>
+  </lib-countdown>
+  <div class="bear-container">
+    <app-bear></app-bear>
+    <app-bear></app-bear>
   </div>
-  <div id="js-clock" class="clock">
-    <div class="clock__days">
-      <span id="js-days">{{days}}</span>
-      <div>Дни</div>
-    </div>
-    <div class="clock__hours">
-      <span id="js-hours">{{hours}}</span>
-      <div>Часы</div>
-    </div>
-    <div class="clock__minutes">
-      <span id="js-minutes">{{minutes}}</span>
-      <div>Минуты</div>
-    </div>
-    <div class="clock__seconds">
-      <span id="js-seconds">{{seconds}}</span>
-      <div>Секунды</div>
-    </div>
-  </div>
-</lib-countdown>
+  <div>

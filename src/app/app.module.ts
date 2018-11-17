@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 import { CountDownModule } from  'ng6-countdown/dist/ng6-countdown-lib';
 
 import { AppComponent } from './app.component';
+import { BearComponent } from './bear/bear.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BearComponent
   ],
   imports: [
     BrowserModule,
