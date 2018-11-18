@@ -160,13 +160,14 @@ body {
   position: fixed;
   display: flex;
   justify-content: space-between;
-  width: calc(100% - 320px) !important;
+  left: 40px;
+  width: calc(100% - 360px) !important;
 }
 
 @media screen and (max-width: 700px) {
   .bear-container {
     bottom: 167px !important;
-    width: calc(100% - 165px) !important;
+    width: calc(100% - 205px) !important;
   }
 }
 
